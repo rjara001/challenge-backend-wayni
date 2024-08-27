@@ -30,4 +30,4 @@ Lo que te encontrás al levantar la .sln es una librería con el objeto de negoc
 
 La resolución es libre y cómo encarar el problema queda en el criterio de quien lo resuelva!
 
-**¡¡Exitos padawan!!**
+**¡¡Éxitos padawan!!**
