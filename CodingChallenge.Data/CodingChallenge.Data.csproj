@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodingChallenge.Data</RootNamespace>
     <AssemblyName>CodingChallenge.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -52,10 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Babel.cs" />
+    <Compile Include="Classes\Circulo.cs" />
+    <Compile Include="Classes\Cuadrado.cs" />
+    <Compile Include="Classes\ImprimerFiguraGeometrica.cs" />
     <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\GestorReporteFormaGeometrica.cs" />
+    <Compile Include="Classes\IFormaGeometrica.cs" />
+    <Compile Include="Classes\Rectangulo.cs" />
+    <Compile Include="Classes\ReporteFormaGeometrica.cs" />
+    <Compile Include="Classes\TrianguloEquilatero.cs" />
+    <Compile Include="Enums\TipoFormaGeometrica.cs" />
+    <Compile Include="Enums\TipoIdiomas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Locals\english.json" />
+    <None Include="Locals\spanish.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
