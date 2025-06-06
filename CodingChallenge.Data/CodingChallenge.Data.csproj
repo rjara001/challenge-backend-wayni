@@ -60,15 +60,22 @@
     <Compile Include="Classes\GestorReporteFormaGeometrica.cs" />
     <Compile Include="Classes\IFormaGeometrica.cs" />
     <Compile Include="Classes\Rectangulo.cs" />
-    <Compile Include="Classes\ReporteFormaGeometrica.cs" />
+    <Compile Include="Classes\Trapecio.cs" />
     <Compile Include="Classes\TrianguloEquilatero.cs" />
     <Compile Include="Enums\TipoFormaGeometrica.cs" />
     <Compile Include="Enums\TipoIdiomas.cs" />
+    <None Include="Locals\frances.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Locals\english.json" />
-    <None Include="Locals\spanish.json" />
+    <None Include="Locals\ingles.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Locals\castellano.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

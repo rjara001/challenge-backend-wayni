@@ -13,5 +13,7 @@ namespace CodingChallenge.Data.Classes
         decimal Area { get; }
 
         decimal Perimetro { get; }
+
+        string Imprimir(Agrupador agrupador, Babel babel);
     }
 }

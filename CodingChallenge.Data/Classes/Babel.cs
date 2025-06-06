@@ -36,8 +36,7 @@ namespace CodingChallenge.Data.Classes
 
             var json = System.IO.File.ReadAllText(filePath);
 
-            this.translations = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-
+            this.translations = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
         }
 
         internal string echo(string text)

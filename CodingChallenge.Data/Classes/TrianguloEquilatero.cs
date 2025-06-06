@@ -19,7 +19,7 @@ namespace CodingChallenge.Data.Classes
         public decimal Perimetro => _lado * 3;
         protected override string ToString(int cantidad, Babel babel)
         {
-            return cantidad == 1 ? babel.echo("Triangulo") : babel.echo("Triangulos");
+            return cantidad == 1 ? babel.echo("triangle") : babel.echo("triangles");
         }
     }
 }

@@ -38,7 +38,7 @@ namespace CodingChallenge.Data.Classes
 
                 if (!_agrupadores.ContainsKey(formaGeometrica.Tipo))
                 {
-                    _contador = new Agrupador() { Cantidad = 1, FormaGeometrica = formaGeometrica };
+                    _contador = new Agrupador() { Cantidad = 0, FormaGeometrica = formaGeometrica };
 
                     _agrupadores.Add(formaGeometrica.Tipo, _contador);
                 }
@@ -53,8 +53,8 @@ namespace CodingChallenge.Data.Classes
             internal string Imprimir()
             {
                 var sb = new StringBuilder();
-                sb.AppendLine(_obtenerLinea());
-                sb.AppendLine(_total());
+                sb.Append(_obtenerLinea());
+                sb.Append(_total());
 
                 return sb.ToString();
             }
@@ -64,7 +64,7 @@ namespace CodingChallenge.Data.Classes
                 var sb = new StringBuilder();
                 foreach (var item in this._agrupadores.Values)
                 {
-                    sb.Append(item.FormaGeometrica.Imprimir(item));  //$"{item.Cantidad} {babel.echo(item.Type.ToString(item.Cantidad))} | Area {item.Area:#.##} | Perimeter {item.Perimetro:#.##} <br/>");
+                    sb.Append(item.FormaGeometrica.Imprimir(item, this.babel));  //$"{item.Cantidad} {babel.echo(item.Type.ToString(item.Cantidad))} | Area {item.Area:#.##} | Perimeter {item.Perimetro:#.##} <br/>");
                 }
 
                 return sb.ToString();

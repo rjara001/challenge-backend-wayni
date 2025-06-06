@@ -19,7 +19,7 @@ namespace CodingChallenge.Data.Classes
 
         protected override string ToString(int cantidad, Babel babel)
         {
-            return cantidad == 1 ? babel.echo("Circulo") : babel.echo("Circulos");
+            return cantidad == 1 ? babel.echo("circle") : babel.echo("circles");
         }
     }
 }

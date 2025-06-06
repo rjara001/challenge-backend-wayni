@@ -10,7 +10,7 @@ namespace CodingChallenge.Data.Classes
     {
         public string Imprimir(Agrupador agrupador, Babel babel)
         {
-            return $"{agrupador.Cantidad} {this.ToString(agrupador.Cantidad, babel)} | {babel.echo("Area")} {agrupador.TotalArea:#.##} | {babel.echo("Perimetro")} {agrupador.TotalPerimetro:#.##} <br/>";
+            return $"{agrupador.Cantidad} {this.ToString(agrupador.Cantidad, babel)} | {babel.echo("area")} {agrupador.TotalArea:#.##} | {babel.echo("perimeter")} {agrupador.TotalPerimetro:#.##} <br/>";
         }
         protected virtual string ToString(int cantidad, Babel babel)
         {

@@ -1,6 +1,6 @@
 namespace CodingChallenge.Data.Classes
 {
-    public class Rectangulo : IFormaGeometrica
+    public class Rectangulo : ImprimerFiguraGeometrica, IFormaGeometrica
     {
         private readonly decimal _ancho;
         private readonly decimal _alto;
@@ -11,20 +11,14 @@ namespace CodingChallenge.Data.Classes
             _alto = alto;
         }
 
-        public int Tipo => FormaGeometrica.Rectangulo;
+        public TipoFormaGeometrica Tipo => TipoFormaGeometrica.Rectangulo;
 
         public decimal Area => _ancho * _alto;
 
         public decimal Perimetro => 2 * (_ancho + _alto);
-
-        public string Imprimir(int idioma)
+        protected override string ToString(int cantidad, Babel babel)
         {
-            return FormaGeometrica.ObtenerLinea(1, Area, Perimetro, Tipo, idioma);
-        }
-
-        public string Imprimir()
-        {
-            return Imprimir(FormaGeometrica.Castellano);
+            return cantidad == 1 ? babel.echo("rectangule") : babel.echo("rectangules");
         }
     }
 }

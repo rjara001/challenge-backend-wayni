@@ -6,11 +6,6 @@ namespace CodingChallenge.Data.Classes
         Cuadrado = 2,
         Circulo = 3,
         TrianguloEquilatero = 4,
-        Pentagono = 5,
-        Hexagono = 6,
-        Heptagono = 7,
-        Octogono = 8,
-        Nonagono = 9,
-        Decagono = 10
+        Trapecio = 5
     }
 }
